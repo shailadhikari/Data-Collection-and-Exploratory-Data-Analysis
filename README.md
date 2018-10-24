@@ -2,15 +2,16 @@
 
 
 # OVERVIEW:
-The hands-on practical learning component of the course comprises two types of activities: learning from existing data explorations and labs covering one or two knowledge units (skills, competencies) of data-intensive computing. This document describes Lab1: Data Collection and Exploratory Data Analysis that involves replicating professional data analysis on a topic of current interest, and extending the data exploration to include another public data source.
-LEARNING OUTCOMES
- Work on data analysis related to socially relevant current topic. (What better than “flu”?)
- Learn by analysis of existing data analysis examples or vignettes. (TwitteR vignette)
- Learn from data analysis and reporting examples available in public sources. (Flu.gov)
- Apply methods for collecting data from publicly available data sources: flu.gov, fluview.
- Install a work environment for carrying out various activities of the data science process: Jupyter, R, RStudio.
- Extract data using APIs and OAuth keys. (For collecting tweets)
- Process the data collected for simple data analysis and charting. (Reproducible research)
+This document describes Lab1: Data Collection and Exploratory Data Analysis that involves replicating professional data analysis on a topic of current interest, and extending the data exploration to include another public data source.
+
+## LEARNING OUTCOMES
+1. Work on data analysis related to socially relevant current topic. (What better than “flu”?)
+2. Learn by analysis of existing data analysis examples or vignettes. (TwitteR vignette)
+3. Learn from data analysis and reporting examples available in public sources. (Flu.gov)
+4. Apply methods for collecting data from publicly available data sources: flu.gov, fluview.
+5. Install a work environment for carrying out various activities of the data science process: Jupyter, R, RStudio.
+6. Extract data using APIs and OAuth keys. (For collecting tweets)
+7. Process the data collected for simple data analysis and charting. (Reproducible research)
 
 
 # OBJECTIVES:
@@ -26,11 +27,12 @@ The lab goals will be accomplished through these specific objectives:
 2
 
 # LAB DESCRIPTION:
-Introduction: An important and critical phase of the data-science process is data collection. Several organizations including the federal government (data.gov) have their data available to the public for various purposes. Social network applications such as Twitter and Facebook collect enormous amount of data contributed by their numerous and prolific user. For other businesses such as Amazon and NYTimes data is a significant and valuable byproduct of their main business. Nowadays everybody has data. Most of these data generator businesses make subset of their data available for use by registered users for free. Some of them as downloadable data files (.csv, .xlsx) as a database (.db, .db3). Sometimes the data that needs to be collected is not in a specific format but is available as a web page content. In this case, typically a web crawler is used to crawl the web (pages) and scrap the data from these web pages and extract the information needed. Data generating organizations have realized the need to share at least a subset of their data with users interested in developing applications. Entire data sets are sold as products.
+## Introduction: 
+An important and critical phase of the data-science process is data collection. Several organizations including the federal government (data.gov) have their data available to the public for various purposes. Social network applications such as Twitter and Facebook collect enormous amount of data contributed by their numerous and prolific user. For other businesses such as Amazon and NYTimes data is a significant and valuable byproduct of their main business. Nowadays everybody has data. Most of these data generator businesses make subset of their data available for use by registered users for free. Some of them as downloadable data files (.csv, .xlsx) as a database (.db, .db3). Sometimes the data that needs to be collected is not in a specific format but is available as a web page content. In this case, typically a web crawler is used to crawl the web (pages) and scrap the data from these web pages and extract the information needed. Data generating organizations have realized the need to share at least a subset of their data with users interested in developing applications. Entire data sets are sold as products.
 What is an API? Why is this so important? A standard, secure and programmatic access to data is provided through an Application Programming Interface (API). An API offers a method for one or two way communication among software (as well as hardware) components as long as they carry the right credentials. These credentials for authentication for programmatic access is defined by another standard OAuth (Open Authentication) delegation protocol [6].
-LAB 1: WHAT TO DO?
-PAIR PROGRAMMING: We are going to allow pair programming for this lab. You will work in groups of one or two. (No groups >2). You will get an F for the course if your group plagiarizes or copies somebody else’s work or some other group’s work. You can discuss anything ONLY with your pair team member. Members in the pair have to work on the entire problem and submit your own notebooks, and submission.
-Preparation: Here are the preliminary requirements for the lab.
+
+## Preparation: 
+Here are the preliminary requirements for the lab.
 1. Work environment: You will working on Jupyter with R kernel. Install Jupyter and R kernel as instructed by the handout [4]. This will be our “Learning Environment”. Later on we will explore “Development Environment” in RStudio;
 2. Create an account on twitter as a user as well as a developer. In the developer site, the tab MyApps is of particular interest. (After you create a twitter developer account,) you will click on MyApps to create a new app called Lab1. Fill in the required fields as per the instructions given there. Once you submit you should be able to get the OAuth credentials [9] that had four parts: Customer API key, Customer API secret, Access Token Key and Access Token Secret. All are needed for programmatically working with Twitter. (Yes, you can auto-tweet, if you know what I mean ;-)
 3. R community has created a package for working with Twitter data called “twitteR”. Read the vignette by Jeff Gentry [12] about the package he contributed. Work on the vignette.
